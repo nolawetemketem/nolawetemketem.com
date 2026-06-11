@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# Debug Logs
+*.log
+
+# Operating System Files
+.DS_Store
