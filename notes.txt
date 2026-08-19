@@ -1,132 +1,56 @@
+
+
 UI Design  
-    - Layout 
-    - Color Scheme (Light & Dark Mode)
-    - Halo around viewport
-Static Animations & Sound
+    - Buttons Positioning 
+    - BackDrop
+    - Implement Color Scheme (Light & Dark Mode)
     - BackDrop Animations 
+    - Halo around viewport
+    - Each Project Video & Animated 
     - Ambient Audio 
-    - Project Animation
 Interactive Animations & Sound
     * On Project Hover 
-        - Pop Out
         - Color Effects -> Glistening
-        - Short message
+        - Short message maybe?
     On Project Click 
         -  Audio On Click
+        - Page change Animations
+    Free Movement Of Some Kind
 Importing Media
-    - Import All Projects
+    - Import Projects
 Deployment
-
-Inspo: 
-    - https://www.challacade.com
-    - https://myfendetta.com
-    - https://youtu.be/T2K2Dksi40s?si=ZuK9j2A6u7nYCyNR
-    - https://youtu.be/_M-nWiGgin8?si=l8lgW90ZlSHiOAAW
-
-
-Help: 
-    - https://www.youtube.com/watch?v=uRYHX4EwYYA&t=290s
-    - https://youtu.be/3yfswsnD2sw?si=dFl454nh0BwUh_0y
-    - https://youtu.be/_tWh4cYCTv0?si=r9uASpqUwtf8EHR-
-    - https://youtu.be/uRYHX4EwYYA?si=YuwL40loePFHVnDp
-
-
-
-Primary Intention hub for sharing and documenting my creations
-
-- Contact Info and Social Media
-- Work Exp: 
-    - TA
-    - VIPS208 desclab Tei-Pagesntern
-- Personal Projects:
-    - CDscape
-    - SpaceCowboy
-    - Website
-    - WebGL Demos
-    - Octavia VR interpretation
-    - Yahentmitsi AR Seating 
-- Sketches
-    - Open Processing 
-    - Unity 
-    - TouchDesigner
-- Art
-    - ARTT110 Drawings, Paintings, ARTT100 Drawings, Paintings,
-- Music
-    - Production/Composition
-        - Solos Labs
-        - Producer Credits
-    - DJ performances
-        - Solace: Broke @ Tempo - Free
-        - Couture: Unplugged - Free
-        - Solace:  So * Lo - $70 
-        - WMUC: Picnic GBM - Free
-        - Couture: Cassanova - Free
-        - WMUC: Astro-Disco Prom - $50
-        - MTL ENRGY - $125
+    - 
 
 
 
 
 Primary Intention hub for sharing and documenting my creations
-
-- Music - Beats for sale, Production credits, Performances(Past and Present)
-
-- Digital Media - Sketches and Projects
-
-- Art - Sketches Paintings Sclupture
-
-
-Creative Direction
-
-arcadia
-games interground designs
-movie screens on dvd players
-inventory
-narrative game shop
-text to speech
-
-Digital Room in the style of 2D 16-bit RPG 
-
-different objects and sections for different stuff 
-- developing & imd
-    - (projector or tv) td and other sketches & projects
-    - (computer, paintings) coding projects  WIP 
-- music
-    - (calendar on the wall) upcoming sets and shows
-    - (harddrive) beats for sale
-    - (vinyl record player/ speaker) music 
-- picture frames - drawings, paintings 
-- laying in the room - sculptures
-- photo video - camera
-- phone - contact 
-- experience 
-
-
-- MVP Resume On the Floor 
-
-Tech Stack
-- HTML/CSS/JavaScript/TypeScript
-- Phaser.js
-    - https://phaser.io/tutorials/how-to-use-phaser-with-typescript
-
-
-Art 
-
-Tiles
--  Dual Grid
--  Tiled
-
-Pixel Art ’n Animation
-
-
-Other
-
-Godol
-
-Love2d
-
-
-
-
-
-
+    - Contact Info and Social Media
+    - Work Exp: 
+        - TA
+        - VIPS208 desclab Tei-Pagesntern
+    - Personal Projects:
+        - CDscape
+        - SpaceCowboy
+        - Website
+        - WebGL Demos
+        - Octavia VR interpretation
+        - Yahentmitsi AR Seating 
+    - Sketches
+        - Open Processing 
+        - Unity 
+        - TouchDesigner
+    - Art
+        - ARTT110 Drawings, Paintings, ARTT100 Drawings, Paintings,
+    - Music
+        - Production/Composition
+            - Solos Labs
+            - Producer Credits
+        - DJ performances
+            - Solace: Broke @ Tempo - Free
+            - Couture: Unplugged - Free
+            - Solace:  So * Lo - $70 
+            - WMUC: Picnic GBM - Free
+            - Couture: Cassanova - Free
+            - WMUC: Astro-Disco Prom - $50
+            - MTL ENRGY - $125
