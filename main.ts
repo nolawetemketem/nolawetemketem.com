@@ -52,14 +52,15 @@ function setScene() {
     })
 }
 
+
+
 if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
     document.addEventListener("DOMContentLoaded", function() {
         console.log("DOMContentLoaded");
-
+        
         setScene();
 
         const mediaElements = document.getElementsByClassName("media-element");
-        var i = 0;
         for (var mediaElement of mediaElements) {
             var mediaElementAsImage = (mediaElement as HTMLImageElement);
 
@@ -67,11 +68,10 @@ if (window.location.pathname === "/" || window.location.pathname.endsWith("index
                 
                 var src = (this as HTMLImageElement).src;
 
-                console.log(`card's src: ${src}`);
+                // console.log(`card's src: ${src}`);
 
                 const rgx = /\/assets\/projects\/(.*)/;
                 var match = src.match(rgx);
-
 
                 if (match && match[1]) {
                     console.log(`match[0]: ${match[0]}`);
@@ -104,32 +104,35 @@ if (window.location.pathname.endsWith("about")) {
     document.addEventListener("DOMContentLoaded", () => {
         // document.getElementsByName("")
 
-        var html = document.getElementById("html");
+        // var html = document.getElementById("html");
 
-        if(html) html.style.backgroundColor = "";
+        // if (html) html.style.backgroundColor = "";
 
-        console.log(`html: ${html}`);
+        // console.log(`html: ${html}`);
 
         var params : URLSearchParams = new URLSearchParams(window.location.search);
         var media = params.get('v');
 
-        console.log(`media: ${media}`);
+        // console.log(`media: ${media}`);
     
         if (media && params) {
             var viewport : HTMLImageElement = (document.getElementById("video-player") as HTMLImageElement);
             if (viewport && viewport.src)
                 viewport.src = media;
 
-            console.log(`viewport: ${viewport}`);
-            console.log(`viewport.src: ${viewport.src}`);
+            // console.log(`viewport: ${viewport}`);
+            // console.log(`viewport.src: ${viewport.src}`);
         }
         
         const backBtn = document.getElementById("back-btn");
         if (backBtn) {
             backBtn.onclick = function() {
-                history.back();
+                // history.back();
 
-                console.log("Navigating back to index");
+                window.location.assign(`/`);
+
+
+                // console.log("Navigating back to index");
             };
         }
     });
