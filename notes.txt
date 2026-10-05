@@ -1,56 +1,21 @@
 
-
-UI Design  
-    - Buttons Positioning 
-    - BackDrop
-    - Implement Color Scheme (Light & Dark Mode)
-    - BackDrop Animations 
-    - Halo around viewport
-    - Each Project Video & Animated 
-    - Ambient Audio 
-Interactive Animations & Sound
-    * On Project Hover 
-        - Color Effects -> Glistening
-        - Short message maybe?
-    On Project Click 
-        -  Audio On Click
-        - Page change Animations
-    Free Movement Of Some Kind
-Importing Media
-    - Import Projects
-Deployment
-    - 
-
-
-
-
-Primary Intention hub for sharing and documenting my creations
-    - Contact Info and Social Media
-    - Work Exp: 
-        - TA
-        - VIPS208 desclab Tei-Pagesntern
-    - Personal Projects:
+Primary Intention hub for sharing and documenting Digital Media Works.
+    - Contact Info/ GitHub
+    - Sketches/Projects:
         - CDscape
         - SpaceCowboy
-        - Website
-        - WebGL Demos
+    - Done
+        - Open Processing loading 
+        - TouchDesigner Flock (Call, Multiply, Go/Direct, Leave)
+        - Unity Adventure - Time Visual
+        - TouchDesigner Black Mirror Truth
+        - Unity Valentines Day
         - Octavia VR interpretation
-        - Yahentmitsi AR Seating 
-    - Sketches
-        - Open Processing 
+    -   Using
+        - Open Processing p5.js
+        - three.js
+        - WebGL
         - Unity 
         - TouchDesigner
-    - Art
-        - ARTT110 Drawings, Paintings, ARTT100 Drawings, Paintings,
-    - Music
-        - Production/Composition
-            - Solos Labs
-            - Producer Credits
-        - DJ performances
-            - Solace: Broke @ Tempo - Free
-            - Couture: Unplugged - Free
-            - Solace:  So * Lo - $70 
-            - WMUC: Picnic GBM - Free
-            - Couture: Cassanova - Free
-            - WMUC: Astro-Disco Prom - $50
-            - MTL ENRGY - $125
+    
+  

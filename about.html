@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html lang="en" id="html" >
+<html lang="en" id="about" >
 <head>
     <title>nolawetemketem</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -15,23 +15,17 @@
     <meta name="theme-color" content="#000000"/> 
 </head>
 <body>
-    <canvas></canvas>
-        
+    <canvas id="background"></canvas>
     <div class="media-container">
-        <div class="media-fullscreen"> 
-
-            <table width="1%" border="0" cellpadding="0" cellspacing="0">
-               <tr><td >  <!-- class="screen" -->
-                    <img id="video-player" src="/assets/icons/kebero.svg" alt="Girl in a jacket"/>
-                </td></tr>
-                <tr class="back-btn-container"><td>
-                    <footer>
-                        <button id="back-btn"> 
-                            BACK
-                        </button>
-                    </footer>
-                </td></tr>
-            </table>
+        <div class="media-fullscreen">
+            <div class="video-formater">
+                 <video class="video-player" controls>
+                    <source class="media-element btn" src="/assets/projects/HappyValentinesDay.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.     
+            </div>
         </div>
     </div>
 </body>
