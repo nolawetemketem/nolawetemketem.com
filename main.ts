@@ -43,11 +43,10 @@ function setScene() {
     camera.position.z = 5;
 
     var lightmode = 0xefefef, darkmode = 0x323232;
-
     var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     renderer.setClearColor( (isDarkMode) ? darkmode : lightmode , 1 );
 
-    function animate( time: any) {
+    function animate( time: any ) {
         var currScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         if ( isDarkMode != currScheme ) {
@@ -61,7 +60,6 @@ function setScene() {
 
     renderer.setAnimationLoop( animate );
 
-
     window.addEventListener('resize', () => {
 
         camera.aspect = window.innerWidth / window.innerHeight;
@@ -74,16 +72,21 @@ function setScene() {
     })
 }
 
-
-
-
 if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
     document.addEventListener("DOMContentLoaded", function() {
         console.log("DOMContentLoaded");
-        setScene();
+        // setScene();
+
+        const mediaScroller = document.querySelector(".fade-in");
+        if (mediaScroller && !sessionStorage.getItem("hasAnimated")) {
+            // Add the class to trigger the animation
+            mediaScroller.classList.add("fade-in");
+            // Set storage flag so it won't fire again this session
+            sessionStorage.setItem("hasAnimated", "true");
+        }
+      
         const mediaElements = document.getElementsByClassName("media-element");
         for (var mediaElement of mediaElements) {
-           
            
             var mediaElementAsImage = (mediaElement as HTMLImageElement);
             mediaElementAsImage.style.viewTransitionName = ``;
@@ -92,14 +95,12 @@ if (window.location.pathname === "/" || window.location.pathname.endsWith("index
                 (this as HTMLImageElement).style.viewTransitionName = `media-content`;
                 var src = (this as HTMLImageElement).src;
                 console.log(`card's src: ${src}`);
-                const rgx = /\/assets\/projects\/(.*)/;
-                var match = src.match(rgx);
+                var match = src.match(/\/assets\/projects\/(.*)\.([a-z])*/);
 
                 if (match && match[1]) {
-                    console.log(`match[0]: ${match[0]}`);
-                    console.log(`match[1]: ${match[1]}`);
-
-                    window.location.assign(`/about?v=${match[0]}`);
+                    // console.log(`match[0]: ${match[0]}`);
+                    // console.log(`match[1]: ${match[1]}`);
+                    window.location.assign(`/about?v=${match[1]}`);
                 } else {
                     window.location.assign(`/about?v=/assets/icons/kebero.svg`);
                 }
@@ -113,12 +114,11 @@ if (window.location.pathname === "/" || window.location.pathname.endsWith("index
         //     audioPlayer.muted = !audioPlayer.muted;
         //     /* animate mute and unmuted states */
         // };
-
+        //
         // startBtn.onclick = function() {
         //     audioPlayer.play();
         // }
     });
-
       document.addEventListener("animationstart", function() {
         const mediaElements = document.getElementsByClassName("media-element");
         for (var mediaElement of mediaElements) {
@@ -128,7 +128,6 @@ if (window.location.pathname === "/" || window.location.pathname.endsWith("index
     });
 }
 
-
 if (window.location.pathname.endsWith("about")) {
     document.addEventListener("DOMContentLoaded", () => {
         // document.getElementsByName("")
@@ -137,15 +136,28 @@ if (window.location.pathname.endsWith("about")) {
         // console.log(`html: ${html}`);
         var params : URLSearchParams = new URLSearchParams(window.location.search);
         var media = params.get('v');
-
         // console.log(`media: ${media}`);
+        
         if (media && params) {
-            var viewport : HTMLImageElement = (document.getElementById("video-player") as HTMLImageElement);
-            if (viewport && viewport.src)
-                viewport.src = media;
+            var viewport : HTMLVideoElement = (document.getElementById("video-player") as HTMLVideoElement);
+            //  console.log(`viewport: ${viewport}`);
 
-            // console.log(`viewport: ${viewport}`);
-            // console.log(`viewport.src: ${viewport.src}`);
+            if (viewport && viewport.src) {
+                if (media == "adventuretime" || media == "octavia" ) {
+                    viewport.src = `assets/projects/${media}.mov`;
+                } else {
+                    viewport.src = `assets/projects/${media}.mp4`;
+                }
+
+            //  console.log(`viewport.src: ${viewport.src}`);
+                viewport.onclick = function goFullscreen() {
+                    // Target the video element
+                    // Use the standard requestFullscreen method
+                    if (viewport.requestFullscreen) {
+                        viewport.requestFullscreen();
+                    } 
+                }
+            }
         }
         const backBtn = document.getElementById("back-btn");
         if (backBtn) {

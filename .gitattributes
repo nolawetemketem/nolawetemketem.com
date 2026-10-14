@@ -4,3 +4,6 @@
 *.mov filter=lfs diff=lfs merge=lfs -text
 assets/projects/*.mov filter=lfs diff=lfs merge=lfs -text
 assets/projects/*.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/projects/*.m4a filter=lfs diff=lfs merge=lfs -text
+assets/projects/*.jpg filter=lfs diff=lfs merge=lfs -text
+assets/projects/*.png filter=lfs diff=lfs merge=lfs -text

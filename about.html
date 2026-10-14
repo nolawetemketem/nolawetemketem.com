@@ -11,17 +11,14 @@
     <link rel="icon" type="image/-xcon" href="/assets/icons/kebero.svg">
     <link rel="stylesheet" href="/style.css">
     <script type="module" src="/main.ts"></script>
-
-    <meta name="theme-color" content="#000000"/> 
+    <!-- <meta name="theme-color" content="#000000"/>  -->
 </head>
 <body>
     <canvas id="background"></canvas>
     <div class="media-container">
         <div class="media-fullscreen">
             <div class="video-formater">
-                 <video class="video-player" controls>
-                    <source class="media-element btn" src="/assets/projects/HappyValentinesDay.mp4" type="video/mp4">
-                </video>
+                 <video id="video-player" src="assets/projects/HappyValentinesDay.mp4" autoplay muted loop playsinline preload="auto"></video> 
             </div>
             <div class="desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.     
@@ -30,10 +27,6 @@
     </div>
 </body>
 </html>
-
-
-
-
  <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <use href="/assets/icons/about.svg"></use>
                                 </svg>-->

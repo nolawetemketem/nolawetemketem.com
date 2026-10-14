@@ -19,3 +19,11 @@ Primary Intention hub for sharing and documenting Digital Media Works.
         - TouchDesigner
     
   
+
+on load -> https://regex101.com
+on tap fullscreen
+header
+img -> video 
+img <- video 
+storing and retrieving video 
+updating youtube video quality
