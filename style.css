@@ -629,3 +629,69 @@ button {
 #soundcloud:hover {
     background-color: var(--high-contrast-color);
 } */
+/* Keep layout independent of external normalization and intrinsic video sizes. */
+header, .media-scroller {
+    box-sizing: border-box;
+    width: 100%;
+}
+.project-link {
+    display: block;
+    min-width: 0;
+    border-radius: var(--radius);
+}
+.project-link .media-element {
+    display: block;
+    width: 100%;
+    animation: none;
+}
+#back-btn {
+    color: var(--high-contrast-color);
+    text-decoration: none;
+    padding: var(--spacer) 0;
+}
+#back-btn:hover { text-decoration: underline; }
+.project-link:focus-visible, #back-btn:focus-visible {
+    outline: 2px solid var(--high-contrast-color);
+    outline-offset: 4px;
+}
+.media-container, .media-fullscreen, .video-formater {
+    min-width: 0;
+    height: auto;
+}
+.media-fullscreen {
+    grid-template-columns: minmax(0, 1fr);
+}
+.video-formater {
+    width: 100%;
+    max-width: 100%;
+}
+.media-fullscreen video {
+    display: block;
+    box-sizing: border-box;
+    width: min(85%, 100vh);
+    width: min(85%, 100dvh);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    max-width: 85%;
+    max-height: 75vh;
+    max-height: 75dvh;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.media-fullscreen video:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (min-width: 760px) {
+    .media-fullscreen {
+        grid-template-columns: minmax(0, 60%) minmax(0, 30%);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    @view-transition { navigation: none; }
+    .fade-in { animation: none; }
+    #video-player { view-transition-name: none; }
+    .btn, .btn:hover, .media-fullscreen video, .media-fullscreen video:hover {
+        transition: none;
+        transform: none;
+    }
+}
