@@ -6,11 +6,11 @@ const assets = import.meta.glob<string>('/assets/projects/*.{mp4,mov,png}', {
 });
 const projects: Record<string, string> = {
     flock: 'flock.mp4',
-    adventuretime: 'AdventureTime.mov',
+    adventuretime: 'adventuretime.mov',
     truth: 'truth.mp4',
     valentinesdayfireworks: 'valentinesdayfireworks.mp4',
     thebigbangtheory: 'thebigbangtheory.mp4',
-    octavia: 'Octavia.mov',
+    octavia: 'octavia.mov',
 };
 const storageKey = 'selected-project';
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
