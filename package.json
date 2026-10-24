@@ -1,0 +1,31 @@
+{
+  "name": "nolaweswebsite",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "open-props": "^1.7.23",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.185.1",
+    "vite": "^8.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolawet/NolawesWebsite.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/nolawet/NolawesWebsite/issues"
+  },
+  "homepage": "https://github.com/nolawet/NolawesWebsite#readme"
+}

@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/about/"
+  to = "/about.html"
+  status = 200
+  force = true

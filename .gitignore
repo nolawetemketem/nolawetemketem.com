@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output and Vite cache
+dist/
+.vite/
+
+# Debug Logs
+*.log
+
+# Local environment files
+.env
+.env.*
+*.local
+
+# Operating System Files
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+
+# Personal Claude Code settings (launch.json is shared)
+.claude/settings.local.json
+
+# Local Netlify folder
+.netlify

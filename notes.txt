@@ -1,0 +1,29 @@
+
+Primary Intention hub for sharing and documenting Digital Media Works.
+    - Contact Info/ GitHub
+    - Sketches/Projects:
+        - CDscape
+        - SpaceCowboy
+    - Done
+        - Open Processing loading 
+        - TouchDesigner Flock (Call, Multiply, Go/Direct, Leave)
+        - Unity Adventure - Time Visual
+        - TouchDesigner Black Mirror Truth
+        - Unity Valentines Day
+        - Octavia VR interpretation
+    -   Using
+        - Open Processing p5.js
+        - three.js
+        - WebGL
+        - Unity 
+        - TouchDesigner
+    
+  
+
+on load -> https://regex101.com
+on tap fullscreen
+header
+img -> video 
+img <- video 
+storing and retrieving video 
+updating youtube video quality
