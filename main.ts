@@ -23,7 +23,8 @@ if (player) {
     if (!player.getAttribute('poster')) player.poster = assets[`/assets/projects/${project}.png`]!;
     player.src = assets[`/assets/projects/${projects[project]}`]!;
     try { sessionStorage.setItem('selected-project', project); } catch { /* Storage is optional. */ }
-    // player.addEventListener('click', () => {
-    //     if (player.requestFullscreen) void player.requestFullscreen().catch(() => {});
-    // });
+    player.addEventListener('click', () => {
+        player.muted = false;
+        // if (player.requestFullscreen) void player.requestFullscreen().catch(() => {});
+    });
 }
